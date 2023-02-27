@@ -1,0 +1,154 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <!-- <div class="typewriter">Hellow, I am Divyaraj Chauhan....</div> -->
+        <header>
+            <!-- <ul>
+                <li><a href="" class="active">Home</a></li>
+                <li><a href="">Tesimonials</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Contact US</a></li>
+                <li>
+                    <div class="dropdown">
+                        <button class="dropbtn"  onclick="myDropbtn()">Memberships
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content"  id="myDropdown">
+                            <a href="">120$ 12day</a>
+                            <a href="">150$ 20day</a>
+                            <a href="">170$ 28day</a>
+                        </div>
+                    </div>
+                </li>
+            </ul> -->
+            <nav id="navbar">
+                <div class="logo">
+                    <!-- <h1>Divyaraj</h1> -->
+                    <div class="typewriter">Hellow, I am Divyaraj Chauhan....</div>
+                </div>
+                <div class="openMenu"><i class="fa fa-bars"></i></div>
+                <ul class="mainMenu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#testimonial">Testimonials</a></li>
+                    <li><a href="#servicess">Services</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <div class="closeMenu"><i class="fa fa-times"></i></div>
+                    <!-- <span class="icons">
+                        
+                    </span> -->
+                    <div class="dropdown">
+                        <button class="dropbtn"  onclick="myDropbtn()">Memberships
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content"  id="myDropdown">
+                            <a href="">120$ 12day</a>
+                            <a href="">150$ 20day</a>
+                            <a href="">170$ 28day</a>
+                        </div>
+                    </div>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Main Part -->
+        <div class="wrapper">
+            <div class="imgmain">
+                <img src="backgrounds/forest.jpg" alt="">
+            </div>
+            <div class="text">
+                <p id="servicess">Hover Image to fill the color</p>
+            </div>
+        </div>
+        <!-- Main Part End Here -->
+
+        <!-- Servies Parts Start's Here -->
+        <section class="services">
+            <!-- <img src="" alt=""> -->
+            <h2 class="H2">Our Services</h2>
+            <div class="cards">
+                <div class="card">
+                    <img src="Images/Services/bank.jpg" alt="" style="width: 100%">
+                    <p>Make Your Own Website</p>
+                    <button type="button" class="ViewMore" id="myBtn">View More &raquo;</button>
+                </div>
+                <div class="card">
+                    <img src="Images/Services/coins.jpg" alt="" style="width: 100%">
+                    <p>Let's Start investments with us</p>
+                    <button type="button" class="ViewMore">View More &raquo;</button>
+                </div>
+                <div class="card">
+                    <img src="Images/Services/dollar.jpg" alt="" style="width: 100%">
+                    <p>New Investments are open</p>
+                    <button type="button" class="ViewMore">View More &raquo;</button>
+                </div>
+              </div>
+
+              <!-- Modal -->
+              <div class="modal" id="myModal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>So, Here we are!</p>
+                </div>
+            </div>
+        </section>
+        <!-- Servies Parts Start's Here -->
+
+        <!-- Testimonial Starts Here -->
+
+
+        <section id="testimonial">
+            <h2 class="H2">Our Testimonails</h2>
+            
+            <figure class="fig1">
+                <img src="Images/Testimonials/Person (3).jpg" alt="person1">
+                <figcaption>
+                    <blockquote>
+                        <p>Be gentle towards your growth</p>
+                    </blockquote>
+                    <h3>Priyanka Chauhan</h3>
+                    <h5>Co-founder</h5>
+                </figcaption>
+            </figure>
+        
+            <figure class="fig2">
+                <img src="Images/Testimonials/newperson (1).jpg" alt="person1">
+                <figcaption>
+                    <blockquote>
+                        <p>The future belongs to those who believe in the beauty of their dreams.</p>
+                    </blockquote>
+                    <h3>Lily Walker</h3>
+                    <h5>Web-Desiginer</h5>
+                </figcaption>
+            </figure>
+
+            <figure class="fig3">
+                <img src="Images/Testimonials/person1.jpg" alt="person1">
+                <figcaption>
+                    <blockquote>
+                        <p>You will face many defeats in life, but never let yourself be defeated.</p>
+                    </blockquote>
+                    <h3>Lily Walker</h3>
+                    <h5>Co-founder</h5>
+                </figcaption>
+            </figure>
+
+
+
+
+
+        <!-- Testimonial Starts Here -->
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
