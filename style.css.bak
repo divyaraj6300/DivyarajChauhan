@@ -22,7 +22,7 @@ html {
     height: 600vh;
     background-image:
         linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-        url('backgrounds/anime.jpg');
+        url('/backgrounds/anime.jpg');
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
