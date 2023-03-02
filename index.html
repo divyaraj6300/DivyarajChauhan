@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
     integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 </head>
 <body>
     <div class="container">
@@ -35,14 +36,15 @@
             <nav id="navbar">
                 <div class="logo">
                     <!-- <h1>Divyaraj</h1> -->
-                    <div class="typewriter">Hellow, I am Divyaraj Chauhan....</div>
+                    <!-- <div class="typewriter">Hellow, I am Divyaraj Chauhan....</div> -->
+                    <h1 class="ml3">Divyaraj Chauhan</h1>
                 </div>
                 <div class="openMenu"><i class="fa fa-bars"></i></div>
                 <ul class="mainMenu">
                     <li><a href="#">Home</a></li>
                     <li><a href="#testimonial">Testimonials</a></li>
                     <li><a href="#servicess">Services</a></li>
-                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#contactus">Contact Us</a></li>
                     <div class="closeMenu"><i class="fa fa-times"></i></div>
                     <!-- <span class="icons">
                         
@@ -62,11 +64,11 @@
         </header>
 
         <!-- Main Part -->
-        <div class="wrapper">
+        <div class="wrapper123">
             <div class="imgmain">
                 <img src="backgrounds/forest.jpg" alt="">
             </div>
-            <div class="text">
+            <div class="text1">
                 <p id="servicess">Hover Image to fill the color</p>
             </div>
         </div>
@@ -79,8 +81,12 @@
             <div class="cards">
                 <div class="card">
                     <img src="Images/Services/bank.jpg" alt="" style="width: 100%">
-                    <p>Make Your Own Website</p>
+                    <p>Make Your Own Website <span id="dots">...</span><span id="more">hyyy my name is divyaraj chauhan</span></p>
                     <button type="button" class="ViewMore" id="myBtn">View More &raquo;</button>
+
+                    <div class="openBtn">
+                        <button class="openButton" onclick="openForm()" id="myBtnn">Read More...</button>
+                      </div>
                 </div>
                 <div class="card">
                     <img src="Images/Services/coins.jpg" alt="" style="width: 100%">
@@ -104,51 +110,320 @@
         </section>
         <!-- Servies Parts Start's Here -->
 
+
         <!-- Testimonial Starts Here -->
 
 
         <section id="testimonial">
             <h2 class="H2">Our Testimonails</h2>
+
+            <!-- <div class="slideshow-container"  class="wrapper1"> -->
+                <figure class="fig1">
+                    <img src="Images/Testimonials/Person (3).jpg" alt="person1">
+                    <figcaption>
+                        <blockquote>
+                            <p>Be gentle towards your growth</p>
+                        </blockquote>
+                        <h3>Priyanka Chauhan</h3>
+                        <h5>Co-founder</h5>
+                    </figcaption>
+                </figure>
+                
+                <figure class="fig1">
+                    <img src="Images/Testimonials/newperson (1).jpg" alt="person1">
+                    <figcaption>
+                        <blockquote>
+                            <p>The future belongs to those who believe in the beauty of their dreams.</p>
+                        </blockquote>
+                        <h3>Lily Walker</h3>
+                        <h5>Web-Desiginer</h5>
+                    </figcaption>
+                </figure>
+                
+                <figure class="fig1">
+                    <img src="Images/Testimonials/person1.jpg" alt="person1">
+                    <figcaption>
+                        <blockquote>
+                            <p>You will face many defeats in life, but never let yourself be defeated.</p>
+                        </blockquote>
+                        <h3>Lily Walker</h3>
+                        <h5>Co-founder</h5>
+                    </figcaption>
+                </figure>
+                
+                
+                <!-- </div> -->
+                
+               </section> 
+                
             
-            <figure class="fig1">
-                <img src="Images/Testimonials/Person (3).jpg" alt="person1">
-                <figcaption>
-                    <blockquote>
-                        <p>Be gentle towards your growth</p>
-                    </blockquote>
-                    <h3>Priyanka Chauhan</h3>
-                    <h5>Co-founder</h5>
-                </figcaption>
-            </figure>
-        
-            <figure class="fig2">
-                <img src="Images/Testimonials/newperson (1).jpg" alt="person1">
-                <figcaption>
-                    <blockquote>
-                        <p>The future belongs to those who believe in the beauty of their dreams.</p>
-                    </blockquote>
-                    <h3>Lily Walker</h3>
-                    <h5>Web-Desiginer</h5>
-                </figcaption>
-            </figure>
-
-            <figure class="fig3">
-                <img src="Images/Testimonials/person1.jpg" alt="person1">
-                <figcaption>
-                    <blockquote>
-                        <p>You will face many defeats in life, but never let yourself be defeated.</p>
-                    </blockquote>
-                    <h3>Lily Walker</h3>
-                    <h5>Co-founder</h5>
-                </figcaption>
-            </figure>
-
-
-
-
-
         <!-- Testimonial Starts Here -->
+
+
+        <!-- Search Bar for blog posts -->
+
+        <section style="border-top: 1px solid white;" class="blogposts">
+            <h2 class="H2">Our BlogPosts</h2>
+
+
+            <!-- <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name"> -->
+
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name" class="searchbar">
+
+<ul id="myUL">
+  
+  <li><div class="cardblog cardres">
+    <img src="Images/Services/dollar.jpg" alt="" style="width: 100%;">
+<div class="containerr">
+    <a href="#">Lily Walker</a>
+    <p class="title">Co-Founder</p>
+    <p class="title">Full-Stake Web Developer</p>
+    <p class="title">lilywals@gmail.com</p>
+    <hr style="opacity: 0.4;">
+    <a href="singleblog.html" role="button" target="_blank"
+        style="text-decoration: none; opacity: 0.8; color: black; letter-spacing: 1px;">View Blog
+        &#62;&#62;</a>
+</div>
+</div></li>
+
+  <li>
+    <div class="cardblog cardres1">
+        <img src="Images/Services/bank.jpg" alt="" style="width: 100%;">
+    <div class="containerr">
+        <a href="#">mark</a>
+        <p class="title">Co-Founder</p>
+        <p class="title">Full-Stake Web Developer</p>
+        <p class="title">lilywals@gmail.com</p>
+        <hr style="opacity: 0.4;">
+        <a href="singleblog.html" role="button" target="_blank"
+            style="text-decoration: none; opacity: 0.8; color: black; letter-spacing: 1px;">View Blog
+            &#62;&#62;</a>
+    </div>
+    </div>
+  </li>
+  <li>
+    <div class="cardblog cardres2">
+        <img src="Images/Services/coins.jpg" alt="" style="width: 100%;">
+    <div class="containerr">
+        <a href="#">james</a>
+        <p class="title">Co-Founder</p>
+        <p class="title">Full-Stake Web Developer</p>
+        <p class="title">lilywals@gmail.com</p>
+        <hr style="opacity: 0.4;">
+        <a href="singleblog.html" role="button" target="_blank"
+            style="text-decoration: none; opacity: 0.8; color: black; letter-spacing: 1px;">View Blog
+            &#62;&#62;</a>
+    </div>
+    </div>
+  </li>
+</ul>
+
+        </section>
+
+
+
+       
+
+        <section class="services">
+            <!-- <img src="" alt=""> -->
+
+            
+            <h2 class="H2">Our Team Members</h2>
+
+            <div class="tab">
+                <button class="tablinks" onclick="openMember(event,'LilyWalker')" id="default">Lily Walker</button>
+                <button class="tablinks" onclick="openMember(event,'MarkPierce')">Mark Pierce</button>
+                <button class="tablinks" onclick="openMember(event,'Aari Aadana')">Aari Aadana</button>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <div class="tabcontent" id="LilyWalker">
+
+                        <img src="Images/Services/bank.jpg" alt="" style="width: 100%">
+                        <p>Make Your Own Website</p>
+                        <button type="button" class="ViewMore" id="myBtn">View More &raquo;</button>
+
+                    </div>
+
+                    <div class="tabcontent" id="MarkPierce">
+                        
+                        <img src="Images/Services/coins.jpg" alt="" style="width: 100%">
+                        <p>Make Your Own Website</p>
+                        <button type="button" class="ViewMore" id="myBtn">View More &raquo;</button>
+
+                    </div>
+
+                    <div class="tabcontent" id="Aari Aadana">
+                        
+                        <img src="Images/Services/dollar.jpg" alt="" style="width: 100%">
+                        <p>Make Your Own Website</p>
+                        <button type="button" class="ViewMore" id="myBtn">View More &raquo;</button>
+
+                    </div>
+                </div>
+              </div>
+        </section>
+
+        <section style="border-top: 1px solid white; margin-top: 20px;"  >
+
+
+            
+            <h2 class="H2">LightBox</h2>
+            <div class="row rows">
+                <div class="column col">
+                  <img src="backgrounds/anime.jpg" style="width:100%" onclick="openModal1();currentSlidee(1)" class="hover-shadow cursor">
+                </div>
+                <div class="column col">
+                  <img src="backgrounds/ball.jpg" style="width:100%" onclick="openModal1();currentSlidee(2)" class="hover-shadow cursor">
+                </div>
+                <div class="column col">
+                  <img src="backgrounds/dark.jpg" style="width:100%" onclick="openModal1();currentSlidee(3)" class="hover-shadow cursor">
+                </div>
+                <div class="column col">
+                  <img src="backgrounds/dark2.jpg" style="width:100%" onclick="openModal1();currentSlidee(4)" class="hover-shadow cursor">
+                </div>
+              </div>
+              
+              <div id="myModall" class="modall">
+                <span class="close cursor" onclick="closeModall()">&times;</span>
+                <div class="modal-contentt">
+              
+                  <div class="mySlidess">
+                    <div class="numbertext">1 / 4</div>
+                    <img src="backgrounds/anime.jpg" style="width:100%">
+                  </div>
+              
+                  <div class="mySlidess">
+                    <div class="numbertext">2 / 4</div>
+                    <img src="backgrounds/ball.jpg" style="width:100%">
+                  </div>
+              
+                  <div class="mySlidess">
+                    <div class="numbertext">3 / 4</div>
+                    <img src="backgrounds/dark.jpg" style="width:100%">
+                  </div>
+                  
+                  <div class="mySlidess">
+                    <div class="numbertext">4 / 4</div>
+                    <img src="backgrounds/dark2.jpg" style="width:100%">
+                  </div>
+                  
+                  <a class="previous" onclick="plusSlidess(-1)">&#10094;</a>
+                  <a class="nextt" onclick="plusSlidess(1)">&#10095;</a>
+              
+                  <div class="caption-container">
+                    <p id="caption"></p>
+                  </div>
+              
+              
+                  <div class="column">
+                    <img class="demo cursor" src="backgrounds/anime.jpg" style="width:100%" onclick="currentSlidee(1)" alt="The Slayer
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="backgrounds/ball.jpg" style="width:100%" onclick="currentSlidee(2)" alt="The Lier">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="backgrounds/dark.jpg" style="width:100%" onclick="currentSlidee(3)" alt="To The Darkness">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="backgrounds/dark2.jpg" style="width:100%" onclick="currentSlidee(4)" alt="Inside the abstract">
+                  </div>
+                </div>
+              </div>
+        </section>
+
+        <!-- <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
+            <i class="fas fa-arrow-up"></i>
+        </button> -->
+
+        <section style="border-top: 1px solid white; margin-top: 150px;">
+            
+            <h2 class="H2">PortFoilo's</h2>
+            <div class="wrapper">
+                <i id="left" class="fa-solid fa-angle-left"></i>
+                <div class="carousel">
+                  <img src="backgrounds/anime.jpg" alt="img" draggable="false">
+                  <img src="backgrounds/anime.jpg" alt="img" draggable="false">
+                  <img src="backgrounds/anime.jpg" alt="img" draggable="false">
+                  <img src="backgrounds/anime.jpg" alt="img" draggable="false">
+                  <img src="backgrounds/anime.jpg" alt="img" draggable="false">
+                  <img src="backgrounds/anime.jpg" alt="img" draggable="false">
+                  <img src="backgrounds/anime.jpg" alt="img" draggable="false">
+                  <img src="backgrounds/anime.jpg" alt="img" draggable="false">
+                  <img src="backgrounds/anime.jpg" alt="img" draggable="false">
+                </div>
+                <i id="right" class="fa-solid fa-angle-right"></i>
+              </div>
+        </section>
+
+        <!-- FAQ Section -->
+
+        <section style="border-top: 1px solid white; margin-top: 10px;">
+        
+            <h2 class="H2">Our FAQ'S</h2>
+
+            <div class="layout">
+                <div class="accordion">
+                    <div class="question">
+                        <p>Where Is Raju?</p>
+                    </div>
+                    <div class="answer">
+                        <p>The Raju is inside the movie</p>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <div class="question">
+                        <p>How Are You From?</p>
+                    </div>
+                    <div class="answer">
+                        <p>I From Good Thanks</p>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <div class="question">
+                        <p>Where is heaven?</p>
+                    </div>
+                    <div class="answer">
+                        <p>InSide Your Heart &hearts;</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+         <section id="contactus" style="border-top: 1px solid white">
+            <div class="container" id="Contact">
+                <h2 class="H2">Start Conversation With Us</h2>
+        
+                <form action="" name="myForm" onsubmit="return validateForm()">
+                    <input type="email" id="email" placeholder="Enter Your Valid Email" class="contactt" autocomplete="off">
+                    <br>
+                    <br>
+                    <input type="password" id="contacid" placeholder="Enter Your Password" class="contactt">
+                    <br>
+                    <br>
+                    <textarea id="subject" name="subject" placeholder="Write Your Message..." style="height:200px"
+                        class="contact1"></textarea>
+                    <br>
+                    <button class="contactsubmit" id="submit">Submit</button>
+                </form>
+            </div>
+        </section>
+
+
+        <footer>
+            <p class="ml3">Copyright &copy; 2023 DivyarajChauhan.in</p>
+        </footer>
+        <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
     </div>
 </body>
 <script src="index.js"></script>
+<script src="testimonial.js"></script>
+<script src="portfoilo.js"></script>
+<script src="scrolltotop.js"></script>
+<script src="header.js"></script>
+<script src="FAQ's.js"></script>
 </html>
