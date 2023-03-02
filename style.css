@@ -1367,6 +1367,7 @@ footer {
   color: white;
   border: 1px solid red;
   transition: all .3s ease-in-out;
+  animation: slideUp 1s ease-in-out ;
 }
 
 #btn-back-to-top:hover {
@@ -1374,10 +1375,28 @@ footer {
   background-color: white;
   transform: translateY(-10%);
 }
+#btn-back-to-top .fas .fa-arrow-up:hover{
+  animation: slideUp 1s ease-in-out ;
+}
+@keyframes slideUp::after{
+  0%{
+    transform: translateY(0%);
+  }
+  100%{
+    transform: translateY(-50%);
+  }
+}
 
 @media screen and (max-width: 600px) {
   .fig1 {
     right: 100%;
   }
-
+  .modal-content{
+    width: 70%;
+  }
 }
+
+
+
+
+
